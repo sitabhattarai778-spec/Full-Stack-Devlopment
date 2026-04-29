@@ -14,10 +14,10 @@ nav {
 
 .logo {
     background-color: green;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +41,117 @@ nav {
 .menu a:hover {
     color: red;
     font-size: 25px;
+}
+
+.menu_icon {
+    display: none;
+}
+
+.banner_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.banner_data{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* align-iteams: center; */
+    justify-content: center;
+}
+
+.banner_data h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    font-style: italic;
+
+}
+
+.banner_data div{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.banner_buttons button
+{
+    background-color: red;
+    padding: 18px 22px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    animation: forwards infinite 1s buttonimate;
+
+}
+
+.banner{
+    background-color: red;
+    height: 500px;
+    width: 100%;
+}
+
+.menu_icon svg {
+    color: white;
+}
+
+.banner {
+    background-color: red;
+    height: 500px;
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 20px;
+
+    overflow: clip;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .background {
+    height: 600px;
+    width: 100%;
+    background-image: url('../Resources/image/sita.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+@keyframes buttonimate {
+    from{
+        opacity: 0%;
+    font-size: 14px;
+
+        /* transform: scale(1); */
+
+    }
+    to{
+        opacity: 100%;
+    font-size: 18px;
+
+        /* transform:scale(1.1); */
+    }
+    
+}
+
+@media(max-width:480px) {
+    body {
+        background-color: red;
+    }
+    .logo {
+        height: 40px;
+        width: 40px;
+        font: size 10px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu_icon {
+        display: block;
+    }
 }
